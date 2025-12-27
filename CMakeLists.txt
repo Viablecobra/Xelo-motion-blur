@@ -47,4 +47,4 @@ set(SOURCES
 )
 
 add_library(motionblur SHARED ${SOURCES})
-target_link_libraries(motionblur preloader log android PUBLIC EGL GLESv3 GLESv2)
+target_link_libraries(motionblur PUBLIC preloader log android EGL GLESv3 GLESv2)
