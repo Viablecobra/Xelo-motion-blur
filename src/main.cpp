@@ -136,7 +136,7 @@ extern "C" __attribute__ ((visibility ("default"))) void mod_preinit() {
         glBindTexture(GL_TEXTURE_2D, previousFrameTexture);
         glUniform1i(previousFrameLocation, 1);
 
-        glUniform1f(blendFactorLocation, 0.7f);
+        glUniform1f(blendFactorLocation, 1.0f);
 
         glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
