@@ -106,7 +106,7 @@ void initializeMotionBlurResources(GLint width, GLint height) {
 }
 
 extern "C" __attribute__ ((visibility ("default"))) void mod_preinit() {
-    auto h = dlopen("libmcpelauncher_mod.so", 0);
+    auto h = dlopen("libminecraftpe.so", 0);
 
     auto mcpelauncher_preinithook = (void (*)(const char*, void*, void**)) dlsym(h, "mcpelauncher_preinithook");
 
